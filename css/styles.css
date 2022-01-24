@@ -6,7 +6,7 @@
 }
 body {
 	background-color: #FFFFFF;
-	margin: 0vh 1vw;
+	margin: 0px 5px;
 }
 @font-face {
   font-family: 'FilsonPro';
@@ -24,7 +24,7 @@ h1 {
 	font-family: 'FilsonPro', sans-serif;   
 	font-size: 2em;
 	text-transform: uppercase;
-	color: #5475B6;
+	color: white;
 	font-weight: 700; /* bold */
 	margin: auto;
 }
@@ -36,7 +36,6 @@ h2 {
 	font-weight: 700; /* bold */
 	width: 100%;
 	padding: 5px;
-	border: white solid 1vw;
 	text-align: center;
 	margin: auto;
 
@@ -54,27 +53,34 @@ a {
 	text-decoration: none;
 	font-family: 'FilsonPro', sans-serif;
 }
-section a {
-	background-color:#EB4F75;
-	color: white;
-	border: white solid 1vw;
-	text-align: center;
-	margin: auto;
-	padding: 10px;
-}
 /* ===========================MAIN CSS================================= */
 header {
-	background-color: #8caef0;
-	height: 10vh;
-	text-align: center;
-	margin: 1vh 0vw;
-}
-.happyflow {
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	background-color: #8caef0;
+	text-align: center;
+	border-top: 5px solid white;
+}
+header img {
+	width: 50%;
+	height: auto;
+	margin: 10px;
 }
 main {
 	background-color:antiquewhite;
+}
+main header {
+	height: auto;
+	background-color: #EB4F75;
+}
+main header a {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding: 10px;
+	background-color: #EB4F75;
+	color: white;
+	border-right: 5px solid white;
 }
 .activities{
 	display: flex;
@@ -82,26 +88,53 @@ main {
 	justify-content:space-evenly ;
 	height: 65vh;
 	width: 100%;
-	border-top: 1vh solid white;
+	border-top: 5px solid white;
 	background-image: url(../images/test.jpg);
 }
 img {
 	width: 100%;
 }
-article {
-	margin: 50px;
-	background-color: rgba(0, 0, 0, 0.4)
-}
-article * {
+.activities article {
 	margin: auto;
+	width: 75%;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 5px solid white;
+}
+.activities article * {
+	margin: 10px 0px;
 	text-align: center;
-	padding: 10px;
 	color: white;
+}
+.activities article img {
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
 }
 footer {
 	background-color: #8caef0;
-	height: 10vh;
-	margin: 1vh 0vw 8vh 0vw;
+	height: auto;
+	border-top: 5px solid white;
+	border-bottom: 65px solid white;
+}
+footer section {
+	border-top: 5px solid white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+footer section img {
+	width: 40%;
+	margin: 10px;
+}
+footer section article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+	color: #EB4F75;
+}
+footer section article p {
+	color: white;
 }
 nav ul {
 	display: flex;
@@ -114,15 +147,21 @@ nav ul {
 	right: 0;
 	background-color: #8caef0;
 	height: 10vh;
-	border: 1vw solid white;
 }
 nav ul li {
-	border-left: 1vw solid white;
-	border-right: 1vw solid white;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: 20px;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	width: 25%;
+	text-align: center;
+}
+nav ul li a {
+	padding: 15px;
+}
+nav ul .active {
+	border: 5px solid white;
 }
 /* ============================== */
 .groupchats {
@@ -130,7 +169,7 @@ nav ul li {
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	border-top: 1vh solid white;
+	border-top: 5px solid white;
 }
 .chattile {
 	display: flex;
@@ -139,15 +178,14 @@ nav ul li {
 	align-items: center;
 	width: 45%;
 	padding: 5px;
-	border: 1vw solid white;
+	border: 5px solid white;
 	background-color: #8caef0;
-	border-radius: 10%;
 	margin: 1em 0em;
+	text-align: center;
 }
 .chattile figure {
-	width:100%;
-	border: 1vw solid white;
-	border-radius: 25%;
+	width: 100%;
+	border: 5px solid white;
 	overflow: hidden;
 }
 .chattile h3 {
@@ -155,31 +193,33 @@ nav ul li {
 }
 /* ============================== */
 .chats {
-	height: 10vh;
 	width: 100%;
-	border-top: 1vh solid white;
+	border-top: 5px solid white;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
-.chats figure {
-	width: 15vw;
-	border: 2px solid white;
-	border-radius: 50%;
-	background: grey;
+.chats > * {
 	margin: 5px;
+}
+.chats img {
+	border: 2px solid white;
 	overflow: hidden;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
 }
 .chatname {
 	display: flex;
 	flex-direction: column;
 	justify-content:space-evenly;
+	width: 60%;
 }
 .chatstatus {
-	margin: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	width: 10%;
 }
 .chatstatus p {	color:red;}
 /* ============================== */
@@ -190,8 +230,18 @@ nav ul li {
 	height: 10vh;
 	width: 100%;
 }
+.chatheader a {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding: 10px;
+	background-color: #EB4F75;
+	color: white;
+	border-right: 5px solid white;
+}
 .chatheader figure {
-	width: 15vw;
+	width: 65px;
+	height: auto;
 	border: 2px solid white;
 	border-radius: 50%;
 	background: grey;
@@ -200,22 +250,42 @@ nav ul li {
 }
 .chatbox {
 	height: 55vh;
-	border-top: 1vh solid white;
+	border-top: 5px solid white;
+	padding: 10px 20px;
 }
-.chatbar {
+.message {
+	color: white;
+	background-color: skyblue;
+	width: fit-content;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.usermessage {
+	margin-left: auto;
+	background-color: white;
+	color: black;
+}
+form {
 	height: 10vh;
-	border-top: 1vh solid white;
+	border-top: 5px solid white;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	padding: 15px;
+	padding: 10px;
 }
-input {
-	width: 100%;
-	border-radius: 50px;
-	padding: 15px;
-	border: 1vw solid white;
-	background-color: rgb(233, 233, 233);
+form input {
+	border: none;
+	outline: none;
+	padding-left: 5px;
+	width: 80%;
+}
+form button {
+	border: none;
+	outline: none;
+	background-color: #EB4F75;
+	color: white;
+	width: 20%;
+
 }
 /* ================================= */
 .login {
@@ -228,7 +298,7 @@ input {
 .login figure {
 	width: 50vw;
 	height: 25vh;
-	border: 1vw solid white;
+	border: 1px solid white;
 	border-radius: 50%;
 }
 .login section {
@@ -236,27 +306,50 @@ input {
 	flex-direction: column;
 }
 /* =================================== */
-.calender {
-	height: 65vh;
-	background-color: antiquewhite;
-	border-top: 1vh solid white;
+.settings {
+	height: 10vh;
+	width: 100%;
+	border-top: 5px solid white;
+	display: flex;
+	padding: 10px;
 }
-.week {
+.chats article {
+	margin: auto;
+}
+/* =================================== */
+.friendslist {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	border-top: 5px solid white;
 }
-.day {
+.friends {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	width: 14vw;
-	height: 10vh;
-	border: 1vw solid white;
-	padding: 10px;
+	align-items: center;
+	width: 45%;
+	padding: 5px;
+	border: 5px solid white;
+	background-color: #8caef0;
+	margin: 1em 0em;
+	text-align: center;
+}
+.friends img {
+	width:100%;
+	border: 5px solid white;
+	overflow: hidden;
+}
+.friends h3 {
+	padding: 1em;
+}
+.friends p {
+	color: lawngreen;
 }
 /* =============== */
 @media only screen and (min-width: 700px) {
-	article	{
+	.activities article	{
 		width: 25%;
 		margin: auto;
 	}
