@@ -51,7 +51,7 @@ p {
 a {
 	color: black;
 	text-decoration: none;
-	font-family: 'FilsonPro', sans-serif;
+	font-family: 'AcuminVariable', sans-serif;
 }
 /* ===========================MAIN CSS================================= */
 header {
@@ -113,7 +113,7 @@ footer {
 	background-color: #8caef0;
 	height: auto;
 	border-top: 5px solid white;
-	border-bottom: 65px solid white;
+	margin-bottom: 10vh;
 }
 footer section {
 	border-top: 5px solid white;
@@ -133,7 +133,7 @@ footer section article {
 	width: 100%;
 	color: #EB4F75;
 }
-footer section article p {
+footer section article a {
 	color: white;
 }
 nav ul {
@@ -159,6 +159,7 @@ nav ul li {
 }
 nav ul li a {
 	padding: 15px;
+	font-family:'FilsonPro';
 }
 nav ul .active {
 	border: 5px solid white;
@@ -183,13 +184,16 @@ nav ul .active {
 	margin: 1em 0em;
 	text-align: center;
 }
-.chattile figure {
+.chattile img {
 	width: 100%;
 	border: 5px solid white;
 	overflow: hidden;
 }
 .chattile h3 {
 	padding: 1em;
+}
+.chattile p {
+	color: whitesmoke;
 }
 /* ============================== */
 .chats {
@@ -213,7 +217,7 @@ nav ul .active {
 	display: flex;
 	flex-direction: column;
 	justify-content:space-evenly;
-	width: 60%;
+	width: 100%;
 }
 .chatstatus {
 	display: flex;
@@ -229,6 +233,10 @@ nav ul .active {
 	justify-content: space-evenly;
 	height: 10vh;
 	width: 100%;
+	border-top: 5px solid white;
+}
+.chatheader .chatname {
+	width: 60%;
 }
 .chatheader a {
 	display: flex;
@@ -240,7 +248,7 @@ nav ul .active {
 	border-right: 5px solid white;
 }
 .chatheader figure {
-	width: 65px;
+	width: 60px;
 	height: auto;
 	border: 2px solid white;
 	border-radius: 50%;
@@ -344,8 +352,11 @@ form button {
 .friends h3 {
 	padding: 1em;
 }
-.friends p {
+.friends .online {
 	color: lawngreen;
+}
+.friends .offline {
+	color: #EB4F75;
 }
 /* =============== */
 @media only screen and (min-width: 700px) {
