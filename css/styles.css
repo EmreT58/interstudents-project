@@ -139,6 +139,7 @@ footer {
 	height: auto;
 	border-top: 5px solid white;
 	margin-bottom: 10vh;
+	overflow: hidden;
 }
 footer section {
 	border-top: 5px solid white;
@@ -156,10 +157,13 @@ footer section article {
 	flex-direction: column;
 	justify-content: center;
 	color: #EB4F75;
-	width: 40%;
+	width: 60%;
 }
 footer section article a {
 	color: white;
+}
+footer section article > h4, a {
+	margin: auto;
 }
 nav ul {
 	display: flex;
