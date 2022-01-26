@@ -132,8 +132,6 @@ img {
 	object-fit: cover;
 }
 .activities article figure {
-	width: 265px;
-	height: 198px;
 	overflow: hidden;
 }
 footer {
@@ -156,9 +154,9 @@ footer section img {
 footer section article {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	width: 100%;
+	justify-content: center;
 	color: #EB4F75;
+	width: 40%;
 }
 footer section article a {
 	color: white;
@@ -258,7 +256,7 @@ nav ul .active {
 .chatheader {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	height: 10vh;
 	width: 100%;
 	border-top: 5px solid white;
@@ -276,16 +274,18 @@ nav ul .active {
 	border-right: 5px solid white;
 }
 .chatheader figure {
-	width: 60px;
-	height: auto;
 	border: 2px solid white;
-	border-radius: 50%;
-	background: grey;
-	margin: 5px;
+	background-color: whitesmoke;
 	overflow: hidden;
+	border-radius: 50%;
+	margin: 5px;
+}
+.chatheader figure img {
+	width: 100%;
+	height: 100%;
 }
 .chatbox {
-	height: 55vh;
+	height: 50vh;
 	border-top: 5px solid white;
 	padding: 10px 20px;
 	overflow: auto;
@@ -297,6 +297,9 @@ nav ul .active {
 	padding: 10px;
 	border-radius: 10px;
 	margin-bottom: 15px;
+}
+.message2 {
+	background-color: lightpink ;
 }
 .usermessage {
 	margin-left: auto;
@@ -348,10 +351,18 @@ form button {
 	width: 100%;
 	border-top: 5px solid white;
 	display: flex;
+	justify-content: flex-start;
 	padding: 10px;
 }
-.chats article {
-	margin: auto;
+.settingsprofile {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.settingsprofile article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 /* =================================== */
 .friendslist {
