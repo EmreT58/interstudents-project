@@ -162,7 +162,7 @@ footer section article {
 footer section article a {
 	color: white;
 }
-footer section article > h4, a {
+footer section article > * {
 	margin: auto;
 }
 nav ul {
@@ -189,6 +189,7 @@ nav ul li {
 nav ul li a {
 	padding: 15px;
 	font-family:'FilsonPro';
+	color: white;
 }
 nav ul .active {
 	border: 5px solid white;
