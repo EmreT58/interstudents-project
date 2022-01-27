@@ -1,4 +1,4 @@
-/* ========================STANDARD CSS======================== */
+/* ========================Preset-CSS======================== */
 *, html {
 	padding: 0px;
 	margin: 0px;
@@ -194,7 +194,7 @@ nav ul li a {
 nav ul .active {
 	border: 5px solid white;
 }
-/* ============================== */
+/* ===========Detailspage=================== */
 .groupchats {
 	display: flex;
 	flex-direction: row;
@@ -225,7 +225,7 @@ nav ul .active {
 .chattile p {
 	color: whitesmoke;
 }
-/* ============================== */
+/* =============Chats-page================= */
 .chats {
 	width: 100%;
 	border-top: 5px solid white;
@@ -257,7 +257,7 @@ nav ul .active {
 	width: 10%;
 }
 .chatstatus p {	color:red;}
-/* ============================== */
+/* =============Livechat-page================= */
 .chatheader {
 	display: flex;
 	flex-direction: row;
@@ -332,25 +332,7 @@ form button {
 	width: 20%;
 
 }
-/* ================================= */
-.login {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	height: 60vh;
-	align-items: center;
-}
-.login figure {
-	width: 50vw;
-	height: 25vh;
-	border: 1px solid white;
-	border-radius: 50%;
-}
-.login section {
-	display: flex;
-	flex-direction: column;
-}
-/* =================================== */
+/* ===============Profile-page==================== */
 .settings {
 	height: 10vh;
 	width: 100%;
@@ -369,7 +351,7 @@ form button {
 	flex-direction: column;
 	justify-content: center;
 }
-/* =================================== */
+/* =================Friends-page================== */
 .friendslist {
 	display: flex;
 	flex-direction: row;
@@ -403,7 +385,7 @@ form button {
 .friends .offline {
 	color: #EB4F75;
 }
-/* =============== */
+/* =======Desktop-usability======== */
 @media only screen and (min-width: 700px) {
 	.activities article	{
 		width: 25%;
