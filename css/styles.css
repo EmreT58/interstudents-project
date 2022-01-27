@@ -324,13 +324,21 @@ form input {
 	padding-left: 5px;
 	width: 80%;
 }
-form button {
+/* form button {
 	border: none;
 	outline: none;
 	background-color: #EB4F75;
 	color: white;
 	width: 20%;
-
+} */
+form a {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EB4F75;
+    color: white;
+	width: 20%;
+	text-align: center;
 }
 /* ===============Profile-page==================== */
 .settings {
